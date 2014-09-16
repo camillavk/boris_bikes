@@ -1,4 +1,4 @@
-require_relative 'bike_container'
+require_relative 'bike_container' 
 
 class Garage
 
@@ -14,7 +14,11 @@ class Garage
 		end
 	end
 
-	
+	def fix_all_bikes
+		bikes.each do |bike|
+			bike.fix!
+		end
+	end
 
 end
 
